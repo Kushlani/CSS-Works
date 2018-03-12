@@ -5,44 +5,62 @@
     <meta charset="UTF-8">
     <title>CSS image</title>
     <style>
+
+    body {
+        background-color: black;
+        
+    }
     div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+        margin: 5px;
+        border: 1px solid royalblue;
+        float: left;
+        width: 300px;
+        margin-left: 25px;
     }
 
     div.gallery:hover {
-        border: 1px solid #777;
+        border: 10px ridge blue;
+    
+
     }
 
-	div.gallery img {
-   		width: 100%;
-    	height: auto;
+    div.gallery img {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
     }
 
-    div.desc {
-   		padding: 15px;
-   		text-align: center;
+    div.imgtext {
+        padding: 15px;
+        text-align: center;
+        color: blue;
+        font-family: cursive;
+        font-size: 20px;
     }
     </style>
 </head>
 
 <body>
-    <h1 style="font-family: cursive;font-size:30px;color: darkblue; text-align: center;">My Flower Collection</h1>
+    <h1 style="font-family: cursive;font-size:40px;color: blue; text-align: center; text-decoration: underline;text-shadow: 4px 3px skyblue">My Flower Collection</h1>
+    <br>
+    <br>
+    <br>
     <div class="gallery">
-        <a href="#" target="_self"><img src="flowers/flowers.jpg"alt="Trolltunga Norway" width="300" height="200"></a>
-        <div class="desc" style="font-family: cursive;color: blue;font-size: 20px">Tulip</div>
-        <div class="gallery">
-            <a href="#" target="_self"><img src="flowers/62a47d8e4ab364cf476f25a473b23c75--hawaiian-flowers-lotus-flowers.jpg" alt="Trolltunga Norway" width="300" height="200"></a>
-            <div class="desc" style="font-family: cursive;color: blue;font-size: 20px">Lotus</div>
-            <div class="gallery">
-                <a href="#" target="_self"><img src="flowers/hero-white-flowers.jpg" alt="Trolltunga Norway" width="300" height="200"></a>
-                <div class="desc" style="font-family: cursive;color: blue;font-size: 20px">Hero White</div>
-                <div class="gallery">
-                    <a href="#" target="_self"><img src="flowers/wild poppy flowers.jpg" alt="Trolltunga Norway" width="300" height="200"></a>
-                    <div class="desc" style="font-family: cursive;color: blue;font-size: 20px">Poppy</div>
-                </div>
+        <a href="https://www.google.lk/search?tbm=isch&sa=1&ei=RZGmWrTLD4HkvAT61Jo4&q=flowers.jpg#imgrc=NECkZTaWoN8HbM:" target="_self"><img src="flowers/flowers.jpg" style="height:200px; width="200px"></a>
+        <div class="imgtext">Tulip</div>
+    </div>
+    <div class="gallery">
+        <a href="https://www.google.lk/search?tbm=isch&sa=1&ei=RZGmWrTLD4HkvAT61Jo4&q=flowers.jpg&oq=flowers.j&gs_l=psy-ab.1.0.0j0i30k1l9.3289.5667.0.7620.7.7.0.0.0.0.565.961.3-1j0j1.2.0....0...1c.1.64.psy-ab..5.2.959...0i67k1.0.s-nwruyDOOk#imgrc=Qx7P2IgBsB-12M:" target="_self"><img src="flowers/62a47d8e4ab364cf476f25a473b23c75--hawaiian-flowers-lotus-flowers.jpg" style="height:200px; width="200px"></a>
+        <div class="imgtext">Lotus</div>
+    </div>
+    <div class="gallery">
+        <a href="https://www.google.lk/search?tbm=isch&sa=1&ei=RZGmWrTLD4HkvAT61Jo4&q=flowers.jpg&oq=flowers.j&gs_l=psy-ab.1.0.0j0i30k1l9.3289.5667.0.7620.7.7.0.0.0.0.565.961.3-1j0j1.2.0....0...1c.1.64.psy-ab..5.2.959...0i67k1.0.s-nwruyDOOk#imgrc=0_05h3Nz7it2IM:" target="_self"><img src="flowers/hero-white-flowers.jpg" style="height:200px; width="200px"></a>
+        <div class="imgtext">Hero White</div>
+    </div>
+    <div class="gallery">
+        <a href="https://www.google.lk/search?tbm=isch&sa=1&ei=RZGmWrTLD4HkvAT61Jo4&q=flowers.jpg#imgrc=n4PpCNXNm6056M:" target="_self"><img src="flowers/wild poppy flowers.jpg" style="height:200px; width="200px"></a>
+        <div class="imgtext">Poppy</div>
+    </div>
 </body>
 
 </html>
