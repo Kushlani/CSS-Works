@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Image</title>
+    <style>
+    
+	.dropdownimg {
+	
+        border: 0px solid blue;
+       
+	}
+
+    .dropdown {
+        position: relative;
+        display: block;
+       
+    }
+
+    .dropdown-content {
+        position: absolute;
+        display: none;
+        border: 3px solid blue;
+        box-shadow: 0px 15px 16px 0px;
+    }
+	.dropdown:hover .dropdownimg{
+		opacity: 0.3;
+		cursor: pointer;
+	}
+    .dropdown:hover .dropdown-content {
+        display: inline-block;
+        margin: 30px;
+    }
+
+    .dropdown:hover img 1 {
+        opacity: 0.5;
+    }
+
+    .text {
+        text-align: center;
+        font-family: cursive;
+        font-size: 20px;
+        color: darkblue;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <img class="dropdownimg" src="JPG.jpg" alt="Minions" width="550" height="450">
+        <div class="dropdown-content text">
+            <img src="JPG.jpg" alt="Smiley" width="350" height="250">
+            <p>My Minions</p>
+        </div>
+    </div>
+</body>
+
+</html>
