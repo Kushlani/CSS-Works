@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: cursive;
+        background: lightgrey;
+    }
+
+    .header {
+        text-align: center;
+        padding: 3px;
+        background-color: black;
+        color: white;
+    }
+
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+        background-color: black;
+        padding-left: 0;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a,
+    .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: grey;
+        cursor: pointer;
+    }
+
+    li a.active {
+        background-color: blue;
+    }
+
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        padding: 0px;
+        background-color: black;
+        box-shadow: 0px 12px 14px 0px;
+        z-index: 1;
+        min-width: 125px;
+    }
+
+    .dropdown-content a {
+        color: white;
+        text-align: center;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #708090;
+    }
+
+    .active {
+        background: blue;
+    }
+
+    .search-container {
+        float: right;
+        margin: 10px 10px 10px;
+    }
+
+    .input[type=text] {
+        padding: 7px;
+    }
+
+    .leftclm {
+        float: left;
+        width: 75%;
+        padding: 15px;
+        color: white;
+        background: black;
+    }
+
+    .rightclm {
+        float: left;
+        width: 25%;
+        padding: 7px;
+        background-color: white;
+    }
+
+    .animated {
+        width: 320px;
+        height: 200px;
+        border-radius: 5px;
+        background: white;
+        animation: mymove 9s infinite;
+    }
+
+    @keyframes mymove {
+        from {
+            background-color: white;
+        }
+        to {
+            background-color: red;
+        }
+    }
+
+    .animatedone {
+        width: 100%;
+        height: auto;
+        background: grey;
+        animation: mymove1 9s infinite;
+    }
+
+    @keyframes mymove1 {
+        from {
+            background-color: white;
+        }
+        to {
+            background-color: grey;
+        }
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+    .footer {
+        font-size: 30px;
+        text-align: center;
+        color: black;
+        padding: 10px;
+    }
+
+
+    p::first-letter {
+        color: dodgerblue;
+        font-size: 35px;
+        font-style: italic;
+    }
+
+    @media screen and (max-width: 600px) {
+        .leftclm,
+        .rightclm {
+            float: none;
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h2 class="animatedone" style="font-size: 50px"> World of Minions</h2></div>
+    <img src="Minions/cat-header-minions_1920x716.jpg" alt="minion" width="100%" height="400">
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Dropdown&nbsp&nbsp<i class="fa fa-caret-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                <a href="#">Link 4</a>
+            </div>
+        </li>
+        <div class="search-container">
+            <form>
+                <input type="text" name="search" placeholder="Search...">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </ul>
+    <div class="row">
+        <div class="leftclm">
+            <h1> Who are Minions...</h1>
+            <p style="font-size:20px;text-align:justify; height:400px">The Minions are small, yellow, melodious henchmen shaped like pill capsules who wear overalls and goggles and have one or two eyes. They mostly speak incomprehensible gibberish, which is partly derived from other languages, including Bahasa Indonesia, French, English, Italian, Spanish, and Hindi.[2][3][4] Although seemingly nonsensical, the English-sounding dialogue is dubbed differently for every country, in order to make the sounds somewhat recognizable.[5] They have the most ordinary of names, with Kevin, Stuart and Bob being the names of the lead trio in Minions, and Mel being the leader of the Minions in Despicable Me 3.[6][7]
+                <br>
+                <br> Minions, the 2015 animated feature film, shows that they have existed since the beginning of life on Earth, and want, above all else, to serve the most terrible of villains.[8] In the 2010 short film "Banana", the Minions are revealed to have an uncontrollable craving for fruits, especially bananas.</p>
+        </div>
+        <div class="rightclm">
+            <div class="animated">
+                <h2 style="text-align:center; color:darkblue">My BRAIN is like the Bermuda Triangle....<br>
+        Information goes in and then it's never found again... </h2></div>
+            <img src="Minions/Ofu-header.jpg" alt="minion" height="298" width="300">
+        </div>
+    </div>
+    <div class="row">
+        <div class="footer" style="background:  #708090">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-flickr"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <br> Powered by <a href="http://quotesnhumor.com/top-40-funny-minions-quotes-and-pics/" style="color: black">Minions</a>
+        </div>
+    </div>
+</body>
+
+</html>
