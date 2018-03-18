@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation bar</title>
+    <style>
+    body {
+        margin: 0;
+        background-color: lightgrey;
+    }
+    /* Clear float..........
+        ..........................*/
+
+    .grouping::before,
+    .grouping::after {
+        content: "";
+        display: table;
+    }
+
+    .grouping::after {
+        clear: both;
+    }
+    /*Top Nav bar..........*/
+
+    .primary-navigation {
+        float: right;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+
+    .primary-navigation>li {
+        float: left;
+        list-style-type: none;
+    }
+
+    .primary-navigation>li:nth-child(1) {
+        background-color: blue;
+        border-left: none;
+    }
+
+    .primary-navigation>li>a {
+        border-left: none;
+        padding: 25px 0;
+        width: 150px;
+    }
+
+    .primary-navigation>li>a:first-child {
+        border-right: 1px solid black;
+    }
+    /*....Submenu...............*/
+
+    .submenu ul {
+        position: absolute;
+        list-style-type: none;
+        top: 70px;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-radius: 0 0 10px 10px;
+        padding: 0;
+        text-align: center;
+        overflow: hidden;
+        display: none;
+    }
+
+    .submenu:hover ul {
+        display: block;
+
+    }
+    .submenu a {
+        display: block;
+        padding: 20px;
+        width: 110px;
+    }
+
+    .submenu a:first-child {
+        border-top: none;
+    }
+    /*.........Nav............*/
+
+    nav {
+        background-color: white;
+        margin-top: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    nav figure {
+        position: absolute;
+        margin: 0;
+        top: 5px;
+        left: 30px;
+    }
+
+    nav li a {
+        float: left;
+        font-family: cursive;
+        color: darkblue;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        transition: .15s background-color linear;
+        list-style-type: none;
+    }
+    /*.......Hover..............*/
+
+    nav li a:hover,
+    nav li a:focus,
+    nav li a.active {
+        background-color: grey;
+        color: white;
+    }
+    /*......NavImage........*/
+
+    nav img {
+        width: 180px;
+        float: left;
+       
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <nav class="grouping">
+        <figure>
+            <img style="display:block" alt="shark" src="kisspng-great-white-shark-clip-art-ferocious-shark-5a70d59d54ecd0.6428609915173441573479.png">
+        </figure>
+        <ul class="primary-navigation grouping">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="submenu"><a href="#">Movies</a>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 1</a></li>
+                </ul>
+            </li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

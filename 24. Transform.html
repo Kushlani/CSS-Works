@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transform</title>
+    <style>
+    .grouping::before,
+    .grouping::after {
+        content: "";
+        display: table;
+    }
+
+    .grouping::after {
+        clear: both;
+    }
+
+    .button {
+        border: 2px solid grey;
+        padding: 10px 0px;
+        color: white;
+        background-color: blue;
+        text-align: center;
+        letter-spacing: 1.5px;
+        display: block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-left: 40px;
+        text-decoration: none;
+        transition: .25s all linear;
+        transform: scale(.9, .9)
+    }
+
+    .button:focus,
+    .button:hover {
+        background-color: blue;
+        color: white;
+        transform: scale(1.1, 1.1) translate(0px, -5px);
+    }<p>Paragraph 5. Not in a div.</p>
+
+    .button-narrow {
+        width: 20%;
+    }
+
+    .button-alt {
+        color: black;
+        background-color: red;
+    }
+
+    .float-left {
+        float: left;
+    }
+
+    .img {
+        border: 3px solid grey;
+        width: 200px;
+        height: 250px;
+        margin-left: 300px;
+        margin-top: 100px;
+        box-shadow: 0 12px 13px;
+        transition: .35s all ease-in-out;
+    }
+
+    .img:hover {
+        transform: rotate(15deg) scale(1.25, 1.25)
+    }
+    </style>
+</head>
+
+<body>
+    <section class="grouping">
+        <div>
+            <h2>Bunny</h2>
+            <p> Hello Bunny how are you.....Hello Bunny how are you.....Hello Bunny how are you.....Hello Bunny how are you.....Hello Bunny how are you.....Hello Bunny how are you.....Hello Bunny how are you.....Hello Bunny how are you.....</p>
+            <figure>
+                <img class="img" src="Minions/large.jpg" alt="minion">
+            </figure>
+        </div>
+    </section>
+</body>
+
+</html>

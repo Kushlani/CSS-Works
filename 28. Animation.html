@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animation</title>
+    <style>
+        body {
+        margin: 0;
+        background-color: lightgrey;
+    }
+    /* Clear float..........
+        ..........................*/
+
+    .grouping::before,
+    .grouping::after {
+        content: "";
+        display: table;
+    }
+
+    .grouping::after {
+        clear: both;
+    }
+    /*Top Nav bar..........*/
+
+    .primary-navigation {
+        float: right;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+
+
+    .primary-navigation>li {
+        float: left;
+        list-style-type: none;
+    }
+
+    .primary-navigation>li:nth-child(1) {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a76bf4+25,a865bc+86 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#795cce+21,fff2fb+100,fff2fb+100 */
+background: #795cce; /* Old browsers */
+background: -moz-linear-gradient(top, #795cce 21%, #fff2fb 100%, #fff2fb 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #795cce 21%,#fff2fb 100%,#fff2fb 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #795cce 21%,#fff2fb 100%,#fff2fb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#795cce', endColorstr='#fff2fb',GradientType=0 ); /* IE6-9 */
+        border-left: none;
+    }
+
+    .primary-navigation>li>a {
+        border-left: none;
+        padding: 25px 0;
+        width: 150px;
+    }
+
+    .primary-navigation>li>a:first-child {
+        border-right: 1px solid black;
+    }
+    /*....Submenu...............*/
+
+    .submenu ul {
+        position: absolute;
+        list-style-type: none;
+        top: 70px;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-radius: 0 0 10px 10px;
+        padding-left: 0;
+        text-align: center;
+        overflow: hidden;
+        display: none;
+    }
+
+    .submenu:hover ul {
+        display: block;
+        animation-name: submenu;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+    }
+    @keyframes submenu {
+        /*from {transform: translateY(100%);opacity:  0.4;}
+        to {transform: translateY(0%); opacity:1}*/
+
+        0% {transform: translateY(-20%); opacity: 0.3;}
+        90% {transform: translateY(5%);}
+        100% {transform: translateY(0%); opacity: 1.0}
+    }
+    .submenu a {
+        display: block;
+        padding: 20px;
+        width: 110px;
+    }
+
+    .submenu a:first-child {
+        border-top: none;
+    }
+    /*.........Nav............*/
+
+    nav {
+        background-color: white;
+        margin-top: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        box-shadow: 0 10px 12px grey;
+    }
+
+    nav figure {
+        position: absolute;
+        margin: 0;
+        top: 5px;
+        left: 30px;
+        animation-name: shark;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+
+    }
+    @keyframes shark {
+           0% {transform: translateY(-40%); }
+          33.33% {transform: translateX(20%)rotate(30deg);}
+            66.66% {transform: translateY(10%)rotate(-20deg)}
+        100% {transform: translateY(-10%);}
+     
+    }
+
+
+    nav li a {
+        float: left;
+        font-family: cursive;
+        color: darkblue;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        transition: .15s background-color linear;
+        list-style-type: none;
+
+    }
+   
+
+    nav li a:hover,
+    nav li a:focus,
+    nav li a.active {
+      
+background: #9a95d8; /* Old browsers */
+background: -moz-linear-gradient(top, #9a95d8 22%, #fff2fb 100%, #fff2fb 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #9a95d8 22%,#fff2fb 100%,#fff2fb 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #9a95d8 22%,#fff2fb 100%,#fff2fb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9a95d8', endColorstr='#fff2fb',GradientType=0 ); /* IE6-9 */
+        color: white;
+    }
+     
+        
+    /*......NavImage........*/
+
+    nav img {
+        width: 180px;
+        float: left;
+
+}
+   
+    </style>
+</head>
+
+<body>
+    <nav class="grouping">
+        <figure>
+            <img style="display:block" alt="shark" src="octopus-icon.png">
+        </figure>
+        <ul class="primary-navigation grouping">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="submenu"><a href="#">Movies</a>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">News</a></li>
+        </ul>
+    </nav>
+   
+</body>
+
+</html>
