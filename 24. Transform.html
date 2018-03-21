@@ -27,7 +27,7 @@
         font-weight: bold;
         margin-left: 40px;
         text-decoration: none;
-        transition: .25s all linear;
+        transition: 1s all linear;
         transform: scale(.9, .9)
     }
 
@@ -35,8 +35,8 @@
     .button:hover {
         background-color: blue;
         color: white;
-        transform: scale(1.1, 1.1) translate(0px, -5px);
-    }<p>Paragraph 5. Not in a div.</p>
+        transform: scale(1.1, 1.1) translate(0px, 5px);
+    }
 
     .button-narrow {
         width: 20%;
@@ -47,8 +47,8 @@
         background-color: red;
     }
 
-    .float-left {
-        float: left;
+    .float-right {
+        float: right;
     }
 
     .img {
@@ -58,11 +58,12 @@
         margin-left: 300px;
         margin-top: 100px;
         box-shadow: 0 12px 13px;
-        transition: .35s all ease-in-out;
+        transition: 1s all ease-in-out;
+
     }
 
     .img:hover {
-        transform: rotate(15deg) scale(1.25, 1.25)
+        transform: rotate(360deg) scale(2.25,2.25)
     }
     </style>
 </head>
@@ -75,6 +76,10 @@
             <figure>
                 <img class="img" src="Minions/large.jpg" alt="minion">
             </figure>
+
+            <div class="button button-narrow button-alt float-right">
+                <p>Hi Bunny</p>
+            </div>
         </div>
     </section>
 </body>
