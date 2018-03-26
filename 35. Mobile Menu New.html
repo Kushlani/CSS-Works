@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/Developement/CSSDemo/35.%20Mobile%20Menu.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Mobile Menu New</title>
+    <link rel="stylesheet" href="./35. Mobile Menu New_files/font-awesome.min.css">
+    <style>
+    body {
+        margin: 0;
+        background-image: url(Backgrounds/hd-deep-water-underwater-background_eywp8jssl__F0010.png);
+        background-repeat: repeat-y;
+    }
+    /* Clear float..........
+        ..........................*/
+
+    .grouping::before,
+    .grouping::after {
+        content: "";
+        display: table;
+    }
+
+    .grouping::after {
+        clear: both;
+    }
+    /*Top Nav bar..........*/
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+    }
+
+
+    img,
+    iframe,
+    video,
+    object {
+        max-width: 100%;
+    }
+
+    .heading {
+        color: #708090;
+        font-family: cursive;
+        font-size: 30px;
+        text-shadow: 0px 10px 12px black;
+        margin-left: 800px;
+        margin-top: 200px;
+    }
+
+    .primary-navigation {
+        float: right;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .primary-navigation>li {
+        float: left;
+    }
+
+    .primary-navigation>li:nth-child(1) {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#23677f+1,ffffff+100 */
+        background: #23677f;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #23677f 1%, #ffffff 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #23677f 1%, #ffffff 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #23677f 1%, #ffffff 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23677f', endColorstr='#ffffff', GradientType=0);
+        /* IE6-9 */
+    }
+
+    .primary-navigation>li>a {
+        border-left: none;
+        padding: 25px 0;
+        width: 150px;
+        color: white;
+    }
+
+    .primary-navigation>li>a:first-child {
+        border-right: 1px solid black;
+    }
+    /*....Submenu...............*/
+
+    .submenu ul {
+        position: absolute;
+        display: none;
+        list-style-type: none;
+        top: 70px;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-radius: 0 0 10px 10px;
+        padding-left: 0;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .submenu:hover ul {
+        display: block;
+        animation-name: submenu;
+        animation-duration: 1s;
+        animation-timing-function: ease;
+    }
+
+    @keyframes submenu {
+        /*from {transform: translateY(100%);opacity:  0.4;}
+        to {transform: translateY(0%); opacity:1}*/
+        0% {
+            transform: translateY(-20%);
+            opacity: 0.3;
+        }
+        90% {
+            transform: translateY(5%);
+        }
+        100% {
+            transform: translateY(0%);
+            opacity: 1.0
+        }
+    }
+
+    .submenu a {
+        display: block;
+        padding: 20px;
+        width: 150px;
+    }
+
+    .submenu a:first-child {
+        border-top: none;
+    }
+    /*.........Nav............*/
+
+    nav {
+        background-color: black;
+        margin-top: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+
+    nav figure {
+        position: fixed;
+        margin: 0;
+        top: 5px;
+        left: 30px;
+        animation-name: tuna;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+
+
+    @keyframes tuna {
+        0% {
+            transform: translateY(-20%);
+        }
+        33.33% {
+            transform: translateX(20%)rotate(30deg);
+        }
+        66.66% {
+            transform: translateY(10%)rotate(-20deg)
+        }
+        100% {
+            transform: translateY(-10%);
+        }
+    }
+    /*......NavImage........*/
+
+    nav img {
+        width: 200px;
+        float: left;
+    }
+
+    nav li a {
+        float: left;
+        font-family: cursive;
+        color: black;
+        font-size: 15px;
+        text-align: center;
+        text-decoration: none;
+        transition: .15s background-color linear;
+        list-style-type: none;
+    }
+
+
+    nav li a:hover,
+    nav li a:focus,
+    nav li a.active {
+
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#23677f+3,ffffff+99 */
+        background: #23677f;
+        /* Old browsers */
+        background: -moz-linear-gradient(top, #23677f 3%, #ffffff 99%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #23677f 3%, #ffffff 99%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #23677f 3%, #ffffff 99%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23677f', endColorstr='#ffffff', GradientType=0);
+        /* IE6-9 */
+    }
+    /*********************************
+    ********Mobile Menu**********/
+
+    .mobile-menu-icon {
+        background: url("Backgrounds/mobile-menu-icon.png") 0 0 no-repeat;
+        width: 40px;
+        height: 35px;
+        float: right;
+        margin: 10px 15px 10px 0px;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon.open {
+        background-image: url("Backgrounds/close-icon_16304.png");
+        width: 45px;
+        height: 40px;
+    }
+    /*****************************************
+    ****************************************/
+
+    .secondary-section {
+        margin-bottom: 20px;
+        background-color: inherit;
+    }
+
+    .wrapper {
+        margin: 0 auto;
+        max-width: 960px;
+        width: 90%;
+    }
+
+    .column {
+        float: left;
+        width: 31.25%;
+        text-align: justify;
+        margin-left: 3.125%;
+    }
+
+    .column:first-child {
+        margin-left: 0;
+    }
+
+    figure {
+
+        transition: .55s all ease-in-out;
+    }
+
+    figure:hover {
+        transform: rotate(360deg) scale(1.5, 1.5);
+    }
+
+    .button {
+        border: 2px solid grey;
+        color: grey;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: cursive;
+        background: black;
+        display: block;
+        transition: .55s all linear;
+        transform: scale(.8, .8);
+    }
+
+    .button:hover {
+        background-color: black;
+        color: grey;
+        transform: scale(1.0, 1.0) translate(0px, 5px);
+    }
+
+    .footer {
+        background-color: inherit;
+        padding: 10px;
+        font-family: cursive;
+        font-size: 40px;
+        font-style: italic;
+        text-align: center;
+    }
+
+
+    @media screen and (max-width: 1023px) {
+        .column {
+            float: none;
+            width: auto;
+            padding: 0 20px;
+        }
+        .column figure {
+            margin: 0 auto;
+            max-width: 150px;
+            width: 100%;
+        }
+        .column p {
+            margin-top: 0;
+        }
+    }
+    /*******************************
+    ************Media Query fr Mobile menu********/
+
+    @media screen and (max-width:900px) {
+        nav {
+            position: static;
+        }
+
+        .primary-navigation {
+            width: 100%;
+            max-width: 0;
+            overflow: hidden;
+        }
+        .primary-navigation.active {
+            max-height: 550px;
+            
+        }
+
+        .primary-navigation>li {
+            float: right;
+            width: 100%;
+        }
+
+        .primary-navigation li a {
+            text-align: right;
+            padding: 15px 25px 15px 0;
+            width: 100%;
+            border-bottom: 1px solid grey;
+            border-left: none;
+            font-size: 13px;
+            color: white;
+        }
+
+        nav figure {
+            width: 100px;
+            top: 0;
+            left: 20px;
+        }
+
+        .submenu ul {
+            position: static;
+            display: block;
+            border: none;
+            border-radius: 0;
+            width: 100%;
+        }
+
+        .submenu:hover ul {
+            animation: none;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav class="grouping">
+        <figure>
+            <img src="./35. Mobile Menu New_files/dolphin-icon.png" alt="dolphin">
+        </figure>
+        <div class="mobile-menu-icon"></div>
+        <ul class="primary-navigation">
+            <li><a href="file:///C:/Developement/CSSDemo/35.%20Mobile%20Menu.html#">Home</a></li>
+            <li><a href="file:///C:/Developement/CSSDemo/35.%20Mobile%20Menu.html#">About</a></li>
+            <li class="submenu"><a href="file:///C:/Developement/CSSDemo/35.%20Mobile%20Menu.html#">Movies&nbsp&nbsp&nbsp<i class="fa fa-caret-down"></i></a>
+                <ul>
+                    <li><a href="file:///C:/Developement/CSSDemo/35.%20Mobile%20Menu.html#">Link 1</a></li>
+                    <li><a href="file:///C:/Developement/CSSDemo/35.%20Mobile%20Menu.html#">Link 2</a></li>
+                    <li><a href="file:///C:/Developement/CSSDemo/35.%20Mobile%20Menu.html#">Link 3</a></li>
+                    <li><a href="file:///C:/Developement/CSSDemo/35.%20Mobile%20Menu.html#">Link 4</a></li>
+                </ul>
+            </li>
+            <li><a href="file:///C:/Developement/CSSDemo/35.%20Mobile%20Menu.html#">News</a></li>
+        </ul>
+    </nav>
+    <div class="heading">
+        <h1>  </h1>
+    </div>
+    <section class="secondary-section grouping">
+        <div class="wrapper">
+            <div class="column">
+                <figure>
+                    <img src="./35. Mobile Menu New_files/shark-icon.png" alt="shark" width="180">
+                </figure>
+                <p>The donkey or ass (Equus africanus asinus)[1][2] is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years. There are more than 40 million donkeys in the world, mostly in underdeveloped countries, where they are used principally as draught or pack animals. Working donkeys are often associated with those living at or below subsistence levels. Small numbers of donkeys are kept for breeding or as pets in developed countries. The donkey or ass (Equus africanus asinus)[1][2] is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years. There are more than 40 million donkeys in the world, mostly in underdeveloped countries, where they are used principally as draught or pack animals.</p>
+                <a href="https://kids.nationalgeographic.com/animals/" class="button" target="_blank">Go to</a>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="./35. Mobile Menu New_files/whale-icon.png" alt="whale" width="180">
+                </figure>
+                <p>The donkey or ass (Equus africanus asinus)[1][2] is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years. There are more than 40 million donkeys in the world, mostly in underdeveloped countries, where they are used principally as draught or pack animals. Working donkeys are often associated with those living at or below subsistence levels. Small numbers of donkeys are kept for breeding or as pets in developed countries. The donkey or ass (Equus africanus asinus)[1][2] is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years. There are more than 40 million donkeys in the world, mostly in underdeveloped countries, where they are used principally as draught or pack animals.</p>
+                <a href="https://kids.nationalgeographic.com/animals/" class="button" target="_blank">Go to</a>
+            </div>
+            <div class="column">
+                <figure>
+                    <img src="./35. Mobile Menu New_files/seal-icon.png" alt="seal " width="180">
+                </figure>
+                <p>The donkey or ass (Equus africanus asinus)[1][2] is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years. There are more than 40 million donkeys in the world, mostly in underdeveloped countries, where they are used principally as draught or pack animals. Working donkeys are often associated with those living at or below subsistence levels. Small numbers of donkeys are kept for breeding or as pets in developed countries. The donkey or ass (Equus africanus asinus)[1][2] is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years. There are more than 40 million donkeys in the world, mostly in underdeveloped countries, where they are used principally as draught or pack animals.</p>
+                <a href="https://kids.nationalgeographic.com/animals/" class="button " target="_blank ">Go to</a>
+            </div>
+        </div>
+    </section>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

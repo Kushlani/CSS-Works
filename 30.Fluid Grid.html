@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Animation</title>
+    <title>Fluid Grid</title>
     <style>
     body {
         margin: 0;
@@ -22,8 +22,16 @@
         clear: both;
     }
     /*Top Nav bar..........*/
-   
-   
+    html {
+        box-sizing: border-box;
+    }
+
+    *, *::before, *::after {
+        box-sizing: inherit;
+    }
+    img, iframe, video, object {
+        max-width: 100%;
+    }
     .heading {
         color: #708090;
         font-family: cursive;
@@ -195,16 +203,17 @@
     }
     .wrapper {
         margin: 0 auto;
-        width: 960px;
-           
+        max-width: 960px;
+        width: 90%;
+        
             
     }
 
     .column {
         float: left;
-        width: 300px;
+        width: 31.25%;
         text-align: justify;
-        margin-left: 30px;
+        margin-left: 3.125%;
 
         
         }
@@ -225,7 +234,7 @@
         border: 2px solid grey;
         color: grey;
         text-align: center;
-        padding: 10px 80px 10px 80px;
+        padding: 10px 20px;
         border-radius: 5px;
         text-decoration: none;
         font-size: 15px;
@@ -250,6 +259,60 @@
         font-style: italic;
         text-align: center;
     }
+
+   /* @media screen and (max-width: 1023px) {
+        .column {
+            float: none;
+            width: auto;
+            padding: 0 50px;
+
+        }
+        .column figure {
+            margin: 0 auto;
+            width: 250px;
+            width: 100%;
+        }
+
+    }
+
+     @media screen and (max-width: 900px) {
+        nav {
+            position: static;
+
+        }
+        .primary-navigation {
+            width: 100%;
+        }
+        .primary-navigation> li {
+            float: right;
+            width: 100%;
+        }
+        .primary-navigation li a {
+            text-align: center;     
+            padding: 15px 25px 15px 25px;
+            width: 100%;
+            border-bottom: 1px solid grey;
+            border-left:  none;
+            font-size: 13px;
+
+        }
+        nav figure {
+            width: 100px;
+            top: 0;
+            left: 20px;
+        }
+        .submenu ul {
+            position: static;
+            display: block;
+            border: none;
+            border-radius: 0;
+            width: 100%;
+
+        }
+        .submenu:hover ul {
+            animation: none;
+        }
+    }*/
     </style>
 </head>
 
