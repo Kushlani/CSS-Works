@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mobile Menu</title>
+    <title>Font Kits & Services</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Open+Sans+Condensed:300,700" rel="stylesheet">
     <style>
     body {
         margin: 0;
@@ -208,27 +209,23 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#23677f', endColorstr='#ffffff', GradientType=0);
         /* IE6-9 */
     }
-    /*********************************
-    ********Mobile Menu**********/
+
     .mobile-menu-icon {
         background: url("Backgrounds/mobile-menu-icon.png") 0 0 no-repeat;
-        width: 40px;
-        height: 35px;
-        float: left;
-        margin: 15px 0 0px 10px;
+        width: 50px;
+        height: 40px;
+        float: right;
+        margin: 10px 0px 5px 0;
         cursor: pointer;
     }
 
     .mobile-menu-icon.open {
         background-image: url("Backgrounds/close-icon_16304.png");
         margin: 5px 10px 10px 5px;
-        width: 50px;
-        height: 45px;
     }
-    /*****************************************
-    ****************************************/
+
     .secondary-section {
-        margin-bottom: 20px;
+        /*margin-bottom: 20px;*/
         background-color: inherit;
     }
 
@@ -287,7 +284,12 @@
         font-style: italic;
         text-align: center;
     }
-         
+     h1 {
+        font-family: "Open Sans Condensed";
+    }
+    p {
+        font-family: "IBM Plex Serif";
+    }
 
     @media screen and (max-width: 1023px) {
         .column {
@@ -296,51 +298,45 @@
             padding: 0 20px;
         }
         .column figure {
-            margin: 0 auto;
-            max-width: 150px;
+            margin: 10px 0 0 0;
             width: 100%;
+            padding: 0 40px;
         }
         .column p {
             margin-top: 0;
         }
     }
-/*******************************
-    ************Media Query fr Mobile menu********/
-     @media screen and (max-width:900px) {
-          nav {
+
+    @media screen and (max-width: 900px) {
+        nav {
             position: static;
         }
-    
-     .primary-navigation {
+        .primary-navigation {
             width: 100%;
             max-height: 0;
             overflow: hidden;
+            transition: .55s all ease-in-out;
         }
-   
-    .primary-navigation.active {
-            max-height: 550px;
-    }
-
-     .primary-navigation > li {
+        .primary-navigation.active {
+            max-height: 450px;
+        }
+        .primary-navigation>li {
             float: right;
             width: 100%;
         }
-
         .primary-navigation li a {
             text-align: right;
-            padding: 15px 25px 15px 0;
+            padding: 15px 25px 15px 25px;
             width: 100%;
             border-bottom: 1px solid grey;
             border-left: none;
             font-size: 13px;
-            color: white;
         }
-         nav figure {
+        nav figure {
             width: 100px;
-            top: 0;
-            left: 10px,
+            top: 10px;
+            left: 0px;
         }
-
         .submenu ul {
             position: static;
             display: block;
@@ -348,12 +344,13 @@
             border-radius: 0;
             width: 100%;
         }
-
+        .submenu ul a {
+            color: white;
+        }
         .submenu:hover ul {
             animation: none;
         }
-      }
-
+    }
     </style>
 </head>
 
@@ -366,7 +363,7 @@
         <ul class="primary-navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li class="submenu"><a href="#">Movies&nbsp&nbsp&nbsp<i class="fa fa-caret-down"></i></a>
+            <li class="submenu"><a href="#">Movies</a>
                 <ul>
                     <li><a href="#">Link 1</a></li>
                     <li><a href="#">Link 2</a></li>
@@ -378,11 +375,9 @@
         </ul>
     </nav>
     <div class="heading">
-        <h1>  </h1>
+        <h1>Hello..</h1>
     </div>
-
     <section class="secondary-section grouping">
-        
         <div class="wrapper">
             <div class="column">
                 <figure>
@@ -406,9 +401,7 @@
                 <a href="https://kids.nationalgeographic.com/animals/ " class="button " target="_blank ">Go to</a>
             </div>
         </div>
-        
     </section>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>

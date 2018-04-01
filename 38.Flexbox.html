@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Mobile Menu</title>
+    <title>Icon Fonts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="icons.css">
     <style>
     body {
         margin: 0;
@@ -239,17 +239,7 @@
         width: 90%;
     }
 
-    .column {
-        float: left;
-        width: 31.25%;
-        text-align: justify;
-        margin-left: 3.125%;
-    }
-
-    .column:first-child {
-        margin-left: 0;
-    }
-
+    
     figure {
 
         transition: .55s all ease-in-out;
@@ -290,21 +280,7 @@
     }
 
 
-    @media screen and (max-width: 1023px) {
-        .column {
-            float: none;
-            width: auto;
-            padding: 0 20px;
-        }
-        .column figure {
-            margin: 0 auto;
-            max-width: 150px;
-            width: 100%;
-        }
-        .column p {
-            margin-top: 0;
-        }
-    }
+   
     /*******************************
     ************Media Query fr Mobile menu********/
     @media screen and (max-width:900px) {
@@ -354,15 +330,53 @@
             animation: none;
         }
       }
+    footer {
+        background-color: black;
+        padding: 100px 0;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+   footer ul{
+    float: left;
+    margin-right: 100px;
+    list-style-type: none;
+  
+   }
 
-   
+   footer .list-heading {
+    text-transform: uppercase;
+    color: white;
+    margin-bottom:30px;
+    font-size: 18px;
+    
+   }
+   footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 5px;
+   }
+   footer li{
+    
+    line-height: 30px;
+    margin-bottom: 10px;
+
+   }
+    footer .icon {
+        margin-right: 10px;
+        font-size: 30px;
+        color: skyblue;
+        transition: .30s color ease-in-out;
+    }
+    footer a:hover .icon{
+        color: red;
+    }
     </style>
 </head>
 
 <body>
     <nav class="grouping">
         <figure>
-            <img src="./35. Mobile Menu New_files/dolphin-icon.png" alt="dolphin">
+            <img src="Animals/dolphin-icon.png" alt="dolphin">
         </figure>
        <div class="mobile-menu-icon"></div>
         <ul class="primary-navigation">
@@ -386,27 +400,52 @@
         <div class="wrapper">
             <div class="column">
                 <figure>
-                    <img src="./35. Mobile Menu New_files/shark-icon.png" alt="shark" width="180">
+                    <img src="Animals/shark-icon.png" alt="shark" width="180">
                 </figure>
                 <p>The donkey or ass (Equus africanus asinus)[1][2] is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years. There are more than 40 million donkeys in the world, mostly in underdeveloped countries, where they are used principally as draught or pack animals. Working donkeys are often associated with those living at or below subsistence levels. Small numbers of donkeys are kept for breeding or as pets in developed countries. The donkey or ass (Equus africanus asinus)[1][2] is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years. There are more than 40 million donkeys in the world, mostly in underdeveloped countries, where they are used principally as draught or pack animals.</p>
                 <a href="https://kids.nationalgeographic.com/animals/" class="button" target="_blank">Go to</a>
             </div>
             <div class="column">
                 <figure>
-                    <img src="./35. Mobile Menu New_files/whale-icon.png" alt="whale" width="180">
+                    <img src="Animals/whale-icon.png" alt="whale" width="180">
                 </figure>
                 <p>The donkey or ass (Equus africanus asinus)[1][2] is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years. There are more than 40 million donkeys in the world, mostly in underdeveloped countries, where they are used principally as draught or pack animals. Working donkeys are often associated with those living at or below subsistence levels. Small numbers of donkeys are kept for breeding or as pets in developed countries. The donkey or ass (Equus africanus asinus)[1][2] is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years. There are more than 40 million donkeys in the world, mostly in underdeveloped countries, where they are used principally as draught or pack animals.</p>
                 <a href="https://kids.nationalgeographic.com/animals/" class="button" target="_blank">Go to</a>
             </div>
             <div class="column">
                 <figure>
-                    <img src="./35. Mobile Menu New_files/seal-icon.png" alt="seal " width="180">
+                    <img src="Animals/seal-icon.png" alt="seal " width="180">
                 </figure>
                 <p>The donkey or ass (Equus africanus asinus)[1][2] is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years. There are more than 40 million donkeys in the world, mostly in underdeveloped countries, where they are used principally as draught or pack animals. Working donkeys are often associated with those living at or below subsistence levels. Small numbers of donkeys are kept for breeding or as pets in developed countries. The donkey or ass (Equus africanus asinus)[1][2] is a domesticated member of the horse family, Equidae. The wild ancestor of the donkey is the African wild ass, E. africanus. The donkey has been used as a working animal for at least 5000 years. There are more than 40 million donkeys in the world, mostly in underdeveloped countries, where they are used principally as draught or pack animals.</p>
                 <a href="https://kids.nationalgeographic.com/animals/" class="button " target="_blank ">Go to</a>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="wrapper grouping">
+        <ul>
+            <li class="list-heading">Social</li>
+            <li><a href=""><span class="icon fi-social-facebook"></span>Facebook</a></li>
+            <li><a href=""><span class="icon fi-social-twitter"></span>Twitter</a></li>
+            <li><a href=""><span class="icon fi-social-google-plus"></span>Google Plus</a></li>
+            <li><a href=""><span class="icon fi-social-dribbble"></span>Dribbble</a></li>
+        </ul>
+        <ul>
+             <li class="list-heading">Interwebs</li>
+            <li><a href=""><span class="icon fi-social-github"></span>Github</a></li>
+            <li><a href=""><span class="icon fi-social-stack-overflow"></span>Stack Overflow</a></li>
+            <li><a href=""><span class="icon fi-social-zurb"></span>Zurb Foundation</a></li>
+            
+        </ul>
+        <ul>
+             <li class="list-heading">Resources</li>
+            <li><a href=""><span class="icon fi-social-smashing-mag"></span>Smashing Mag</a></li>
+            <li><a href=""><span class="icon fi-social-treehouse"></span>Tree House</a></li>
+            <li><a href=""><span class="icon fi-social-designer-news"></span>Designer News</a></li>
+           
+        </ul>
+    </div>
+    </footer>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
