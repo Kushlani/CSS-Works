@@ -1,0 +1,196 @@
+                body {
+                margin: 0;
+                background-color: white;
+                font-family: sans-serif, Arial;
+            }
+            /* Clear float..........
+        ..........................*/
+
+            .grouping::before,
+            .grouping::after {
+                content: "";
+                display: table;
+            }
+
+            .grouping::after {
+                clear: both;
+            }
+
+
+            html {
+                box-sizing: border-box;
+            }
+
+            *,
+            *::before,
+            *::after {
+                box-sizing: inherit;
+            }
+            /*@font-face {
+        font-family: 'Helmet-Regular';
+        src: ('Fonts/Helmet-Regular.ttf');
+    }*/
+
+            img,
+            iframe,
+            video,
+            object {
+                max-width: 100%;
+            }
+
+            nav {
+                background-color: black;
+                margin-top: 0;
+                position: fixed;
+                top: 0;
+                right: 0;
+                left: 0;
+            }
+
+            nav figure {
+                position: fixed;
+                margin: 0;
+                top: 0px;
+                left: 25px;
+            }
+
+            nav img {
+                width: 60px;
+                height: 59px;
+                float: left;
+                margin: 0 0 0 90px;
+                padding: 0;
+            }
+
+            nav a {
+                float: left;
+                color: darkgrey;
+                font-size: 15.5px;
+                text-align: center;
+                text-decoration: none;
+                list-style-type: none;
+                transition: 1s all ease;
+            }
+
+
+            nav a:hover,
+            nav a:focus,
+            nav a.active {
+                color: white;
+            }
+
+            .primary-navigation {
+                float: left;
+                margin: 0px;
+                padding: 16px 0 17px 180px;
+            }
+
+            .primary-navigation li {
+                float: left;
+                list-style-type: none;
+            }
+
+            .primary-navigation li a {
+                color: grey;
+                border-left: 1px solid grey;
+                padding: 0px 8px 0px 8px;
+                text-decoration: none;
+            }
+
+            .primary-navigation a:hover {
+                transition: 1s all ease;
+                color: white;
+            }
+
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .image {
+                width: 80px;
+                height: 75px;
+                float: left;
+                padding-right: 5px;
+            }
+
+            /*********Mobile Menu********/
+
+           .container {
+                width: 40px;
+                height: 35px;
+                float: right;
+                margin: 6px 18px 9px 0;
+                cursor: pointer;
+                display: none;
+            }
+          
+            .bar1, .bar2, .bar3 {
+                width: 35px;
+                height: 5px;
+                background-color: white;
+                margin: 6px 0;
+                transition: 0.4s;
+            }
+           
+             .bar1.open {
+                transform: rotate(-47deg) translate(-10px, 6px);
+             }
+             .bar2.open {
+                opacity: 0;
+             }
+            .bar3.open {
+                transform: rotate(45deg) translate(-8px, -6px);
+             }
+          
+
+            /*********Media Query fr Mobile menu********/
+         
+            @media screen and (max-width:900px) {
+               nav {
+                    position: static;
+                }
+
+                nav figure {
+                    width: 50px;
+                    top: 0;
+                    left: 0;
+                }
+                nav img {
+                    width: 50px;
+                    height: auto;
+                    float: left;
+                    margin-left: 0;
+                }
+               .primary-navigation.active{
+                    max-height: 550px;
+                }
+
+                .primary-navigation {
+                    width: 100%;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: .50s all ease-in-out;
+                    padding: 0;
+
+                }
+                .primary-navigation>li {
+                    float: right;
+                    width: 100%;
+                }
+
+                .primary-navigation li a {
+                    text-align: right;
+                    padding: 15px 25px 15px 0;
+                    width: 100%;
+                    border-bottom: 1px solid grey;
+                    border-left: none;
+                    font-size: 13px;
+                    color: grey;
+                }
+                
+               .container {
+                display: inline-block;
+               }
+              

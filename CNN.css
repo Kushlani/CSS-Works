@@ -1,0 +1,623 @@
+                                body {
+                                margin: 0;
+                                background-color: white;
+                                font-family: sans-serif, Arial;
+                            }
+                            /* Clear float..........
+        ..........................*/
+
+                            .grouping::before,
+                            .grouping::after {
+                                content: "";
+                                display: table;
+                            }
+
+                            .grouping::after {
+                                clear: both;
+                            }
+
+
+                            html {
+                                box-sizing: border-box;
+                            }
+
+                            *,
+                            *::before,
+                            *::after {
+                                box-sizing: inherit;
+                            }
+                            /*@font-face {
+        font-family: 'Helmet-Regular';
+        src: ('Fonts/Helmet-Regular.ttf');
+    }*/
+
+                            img,
+                            iframe,
+                            video,
+                            object {
+                                max-width: 100%;
+                            }
+
+                            nav {
+                                background-color: black;
+                                margin-top: 0;
+                                position: fixed;
+                                top: 0;
+                                right: 0;
+                                left: 0px;
+                            }
+
+                            nav figure {
+                                position: fixed;
+                                margin: 0;
+                                top: 0px;
+                                left: 25px;
+                            }
+
+                            nav img {
+                                width: 60px;
+                                height: 59px;
+                                float: left;
+                                margin: 0 0 0 90px;
+                                padding: 0;
+                            }
+
+                            nav a {
+                                float: left;
+                                color: darkgrey;
+                                font-size: 15.5px;
+                                text-align: center;
+                                text-decoration: none;
+                                list-style-type: none;
+                                transition: 1s all ease;
+                            }
+
+
+                            nav a:hover,
+                            nav a:focus,
+                            nav a.active {
+                                color: white;
+                            }
+
+                            .primary-navigation {
+                                float: left;
+                                margin: 0px;
+                                padding: 16px 0 17px 180px;
+                            }
+
+                            .primary-navigation li {
+                                float: left;
+                                list-style-type: none;
+                            }
+
+                            .primary-navigation li a {
+                                color: grey;
+                                border-left: 1px solid grey;
+                                padding: 0px 8px 0px 8px;
+                                text-decoration: none;
+                            }
+
+                            .primary-navigation a:hover {
+                                transition: 1s all ease;
+                                color: white;
+                            }
+
+                           
+
+
+                            .heading {
+                                color: black;
+                                text-transform: uppercase;
+                                font-size: 38px;
+                                text-align: center;
+                                letter-spacing: -2px;
+                                word-spacing: -5px;
+                                margin-top: 100px;
+                                margin-bottom: 10px;
+                                font-weight: lighter;
+                            }
+
+                            .heading a {
+                                color: black;
+                                text-decoration: none;
+                            }
+
+                            .heading a:hover {
+                                color: #B22222;
+                            }
+
+                            .secondary-section {
+                                margin-top: 20px;
+                                background-color: inherit;
+                            }
+
+                            .wrapper {
+                                margin: 0 auto;
+                                max-width: 1170px;
+                                width: 90%;
+                            }
+
+                            .column {
+                                float: left;
+                                width: 61.22806%;
+                                text-align: justify;
+                                margin-left: 2.5641%;
+                            }
+
+                            .column1 {
+                                float: left;
+                                width: 28.64103%;
+                                text-align: justify;
+                                margin-left: 2.5641%;
+                            }
+
+
+                            .column2 {
+                                float: left;
+                                width: 29.84103%;
+                                text-align: justify;
+                                margin-left: 2.5641%;
+                            }
+
+                            .column3 {
+                                float: left;
+                                width: 25.64103%;
+                                text-align: justify;
+                                margin-left: 3.6641%;
+                            }
+
+                            .container {
+                                position: relative;
+                            }
+
+                            .bottomright {
+                                position: absolute;
+                                bottom: 3px;
+                                right: 0px;
+                                background-color: white;
+                                font-size: 33px;
+                                font-weight: bolder;
+                                opacity: 0.8;
+                                letter-spacing: -1px;
+                                word-spacing: -2px;
+                                padding: 10px 0;
+                            }
+
+                            .bottomright a {
+                                text-decoration: none;
+                                color: black;
+                            }
+
+                            .bottomright:hover a {
+                                color: #822222;
+                            }
+
+                            .bottomup {
+                                position: absolute;
+                                background-color: #B22222;
+                                color: white;
+                                font-size: 10px;
+                                bottom: 99px;
+                                left: 0px;
+                                text-transform: uppercase;
+                                font-weight: bolder;
+                                padding: 13px;
+                                letter-spacing: -0.7px;
+                            }
+
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+
+                            .image {
+                                width: 80px;
+                                height: 75px;
+                                float: left;
+                                padding-right: 5px;
+                            }
+
+                            .para {
+                                margin: 0;
+                                padding-left: 0px;
+                            }
+
+                            .para li {
+                                list-style-type: none;
+                                border-top: 1px solid lightgrey;
+                                padding: 10px 0px;
+                            }
+
+                            .para a {
+                                font-size: 22px;
+                                word-spacing: -1px;
+                                letter-spacing: -0.8px;
+                                text-decoration: none;
+                                color: black;
+                            }
+
+                            .para li:first-child {
+                                border-top: none;
+                            }
+
+                            .para a:hover {
+                                color: #B22222;
+                            }
+
+                            .colhead {
+                                background-color: lightgrey;
+                                color: black;
+                                font-size: 20px;
+                                font-weight: bold;
+                                padding: 6px;
+                            }
+
+                            .colhead:hover {
+                                color: #B22222;
+                            }
+
+                            .subhead {
+                                font-size: 25px;
+                                font-weight: bold;
+                                padding-bottom: 4px;
+                                padding-top: 0px;
+                                letter-spacing: -.3px;
+                                color: black;
+
+                            }
+
+                            .subhead:hover {
+                                color: #B22222;
+                            }
+
+                            .pichead {
+                                margin: 0;
+                                padding-left: 0px;
+                            }
+
+                            .pichead li {
+                                list-style-type: none;
+                                border-top: 1px solid lightgrey;
+                                padding-bottom: 5px;
+                                float: left;
+                            }
+
+                            .pichead a {
+                                font-size: 16px;
+                                word-spacing: -1px;
+                                letter-spacing: -0.8px;
+                                text-decoration: none;
+                                color: grey;
+                                text-align: justify;
+                            }
+
+                            .pichead a:hover {
+                                color: #B22222;
+                            }
+
+                            .pichead li:nth-child(2) {
+                                border-top: none;
+                            }
+
+                            .head2 {
+                                margin-left: 25px;
+                                border-bottom: 2px solid #D3D3D3;
+                                color: #696969;
+                            }
+
+                            .sechead {
+                                font-weight: bolder;
+                                background-color: #E6E6FA;
+                                padding: 8px;
+                            }
+
+                            .secbothead {
+                                font-size: 20px;
+                            }
+
+                            .secbothead:hover {
+                                color: #822222;
+                            }
+
+                            .para1 {
+                                margin: 0;
+                                padding-left: 0px;
+                            }
+
+                            .para1 li {
+                                list-style-type: none;
+                                border-top: 1px solid lightgrey;
+                                padding: 10px 0px;
+                            }
+
+                            .para1 a {
+                                font-size: 16px;
+                                word-spacing: -1px;
+                                letter-spacing: -0.8px;
+                                text-decoration: none;
+                                color: grey;
+                            }
+
+                            .para1 a:hover {
+                                color: #B22222;
+                            }
+                            /*********************************
+                        ********Mobile Menu********/
+
+                            .iconSet {
+                                width: 40px;
+                                height: 35px;
+                                float: right;
+                                margin: 7px 15px 8px 0px;
+                                cursor: pointer;
+                                display: none;
+                            }
+
+                            .test1,
+                            .test2,
+                            .test3 {
+                                width: 30px;
+                                height: 5px;
+                                background-color: white;
+                                margin: 6px 0;
+                                transition: 0.4s;
+                            }
+
+                            .test1.open {
+                                transform: rotate(-47deg) translate(-10px, 6px);
+                            }
+
+                            .test2.open {
+                                opacity: 0;
+                            }
+
+                            .test3.open {
+                                transform: rotate(45deg) translate(-8px, -6px);
+                            }
+                       
+                            .menulist {
+
+                                font-size: 28px;
+                                float: right;
+                                cursor: pointer;
+                                color: #696969;
+                                padding: 10px 8px 0px 8px;
+                                transition: 1s all ease;
+                                margin-right: 30px;
+                            }
+                            .menulist:hover {
+                                color: white;
+                            }
+
+
+                            .dropmenu {
+                                color: darkgrey;
+                                font-size: 16px;
+                                padding: 15px 0 5px 0;
+                                float: right;
+                                transition: 1s all ease;
+                            }
+                             .dropmenu:hover {
+                                color: white;
+                            }
+
+                            .searchicon {
+                              
+                                font-size: 28px;
+                                float: right;
+                                padding: 10px 8px 0px 8px;
+                                transition: 1s all ease;
+                                margin-right: 0px;
+                                cursor: pointer;
+                                color: #696969;
+                            }
+                            .searchicon:hover {
+                                color: white;
+                            }
+                            .search-container {
+                                float: right;
+                                display: none;
+                              
+                            }
+
+                             .search-container input[type=text] {
+                                padding: 3px;
+                                margin-top:13px;
+                                font-size: 14px;
+                                border: none;
+                                width: 100px;
+                                transition: .55s all linear;
+                                 
+                            }
+                            
+                            .primary-navigation.open {
+                                
+                                display: none;
+                            }
+                            .dropmenu.open {
+                                
+                                display: none;
+                            }
+                             .search-container.active {
+                                padding: 7px;
+                                margin:10px 0 11px 0;
+                                font-size: 14px;
+                                border: none;
+                                width: 1050px;
+                                display: block;
+                                
+                               
+
+                            }
+                            /************Media Query fr Mobile menu********/
+                            /********************Media Query****************/
+
+                            @media screen and (max-width:900px) {
+                                nav {
+                                    position: static;
+                                }
+
+                                nav figure {
+                                    width: 50px;
+                                    top: 0;
+                                    left: 0;
+                                    position: static;
+                                }
+                                nav img {
+                                    width: 50px;
+                                    height: auto;
+                                    float: left;
+                                    margin-left: 0px;
+                                }
+                                .primary-navigation.active {
+                                    max-height: 550px;
+                                }
+
+                                .primary-navigation {
+                                    width: 100%;
+                                    max-height: 0;
+                                    overflow: hidden;
+                                    transition: .50s all ease-in-out;
+                                    padding: 0;
+                                }
+                                .primary-navigation>li {
+                                    float: right;
+                                    width: 100%;
+                                }
+
+                                .primary-navigation li a {
+                                    text-align: right;
+                                    padding: 15px 25px 15px 0;
+                                    width: 100%;
+                                    border-bottom: 1px solid grey;
+                                    border-left: none;
+                                    font-size: 13px;
+                                    color: grey;
+                                }
+
+
+                                .iconSet {
+                                    display: block;
+                                }
+                                .menulist{
+                                     display: none;
+                                }
+
+                                .searchicon.active{
+                                    display: block;
+                                    margin-right: 12px;
+                                
+                                }
+                                 .searchicon{
+                                    display: none;
+                                
+                                }
+                                
+                             .search-container input[type=text] {
+                                
+                                width: 100%;
+                                display:block;
+                                 
+                            }
+                                .search-container.active {
+                                float: none;
+                                width: 100%;
+                                display: block;
+                            
+                            }
+                                .dropmenu {
+                                     display: none;
+                                }
+                                
+                                 
+                                
+                                .heading {
+                                    width: 100%;
+                                    float: left;
+                                    margin-top: 0;
+                                }
+
+                                .heading a {
+
+                                    font-size: 20px;
+                                }
+                                .column {
+                                    float: left;
+                                    width: 100%;
+                                    margin-left: 0;
+                                }
+
+                                .bottomup {
+                                    position: relative;
+                                    width: 100%;
+                                    float: left;
+                                    bottom: 10px;
+                                }
+                                .bottomup a {
+                                    font-size: 10px;
+                                    height: 0;
+                                }
+                                .bottomright {
+                                    position: relative;
+                                    width: 100%;
+                                    float: left;
+                                    padding: 0px;
+                                    bottom: 10px;
+                                    line-height: 20px;
+                                }
+                                .bottomright a {
+                                    font-size: 18px;
+                                }
+
+                                .para {
+                                    width: 100%;
+                                    float: left;
+                                }
+                                .para a {
+                                    font-size: 17px;
+                                }
+                                .colhead {
+                                    width: 100%;
+                                    float: left;
+                                    font-size: 18px;
+                                }
+
+                                .column1 {
+                                    float: left;
+                                    width: 100%;
+                                }
+                                .column2 {
+
+                                    width: 100%;
+                                    margin-left: 0;
+                                }
+
+                                .column3 {
+
+                                    width: 300px;
+                                    margin-right: 10px;
+                                }
+
+                                .pichead li {
+                                    width: 100%;
+                                    float: left;
+                                    margin-left: 8px;
+                                    padding-right: 30px;
+                                }
+                                .pichead li a {
+                                    font-size: 15px;
+                                }
+                                .subhead {
+                                    width: 100%;
+                                    float: left;
+                                    font-size: 20px;
+                                }
+                                .pichead li a {
+                                    font-size: 15px;
+                                }
+
+                                .head2 {
+                                    width: 100%;
+                                    float: left;
+                                    margin-left: 0;
+                                }
